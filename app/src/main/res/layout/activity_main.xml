@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bg"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#0E0E0E"
+        android:text="Music For Everyone"
+        android:textColor="#CCCCCC"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_edittext"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_baseline_mail_24"
+            android:hint="Username"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_edittext">
+
+        <EditText
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:background="@null"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:text="Remember me"
+        android:textSize="15dp"
+        android:drawableRight="@drawable/ic_baseline_toggle_on_24"/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Login"
+        android:text="Log In"
+        android:textColor="@android:color/black"
+        android:background="@drawable/round_button"/>
+
+    <EditText
+        android:background="@null"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="---------- OR ----------"/>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bt_facebook"
+        android:textColor="@color/white"
+        android:text="Log In With Facebook"
+        android:drawableLeft="@drawable/ic_facebook"
+        app:backgroundTint="@null"
+        android:background="@drawable/round_facebook"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Don't have an account ?  Sign Up"/>
+
+    <EditText
+        android:background="@null"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset Password   Settings"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
